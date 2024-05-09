@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { NgIf } from '@angular/common';
+import {NgFor} from "@angular/common";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, NgIf],
+  imports: [RouterOutlet, NgIf, NgFor],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
@@ -26,6 +27,10 @@ export class AppComponent {
   public age: number;
   public day: number;
   public str: string;
+
+  public makeSqrt(num: number) {
+    return Math.sqrt(num)
+  }
 
   constructor() {
     this.squareRootOfTwo = Math.sqrt(2);

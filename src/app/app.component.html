@@ -89,3 +89,23 @@
 </ng-template>
 
 <p>{{ isAdmin }}</p>
+
+<ul>
+  <li *ngFor="let el of arr; let i = index; let first = first let last = last">
+    square: {{makeSqrt(el)}}
+    index: {{i}}
+    {{first ? "FIRST" : "mmmmm"}}
+    {{last ? "LAST" : "ooooo"}}
+  </li>
+</ul>
+
+<ul>
+@for (elem of arr; track $index; ) {
+	<li>
+		elem: {{ elem }}
+    index: {{$index + 1}}
+    {{$first ? "FIRST" : "kkkkk"}}
+    {{$last ? "LAST" : "yyyyyy"}}
+  </li>
+}
+</ul>
