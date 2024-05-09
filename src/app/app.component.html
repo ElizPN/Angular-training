@@ -39,5 +39,18 @@
 
   <div *ngIf="age === 18">You are adult </div>
 
+  @if (isAdmin) {
+    <div>Yesss, you are admin</div>
+  }
+
+  @if (num === 1) {
+    <div>Number is one</div>
+  }
+
+  @if (isAdmin) {
+    <div>You are admin</div>
+  } @else {
+    <div>You are usual user</div>
+  }
 
 </div>
