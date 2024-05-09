@@ -34,5 +34,10 @@
   <textarea placeholder={{text}}></textarea>
   <textarea [value]="text"></textarea>
 
+  <div *ngIf="isAdmin">I am admin</div>
+  <div *ngIf="num === 1">Show if number is equal to 1</div>
+
+  <div *ngIf="age === 18">You are adult </div>
+
 
 </div>
