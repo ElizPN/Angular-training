@@ -24,6 +24,8 @@ export class AppComponent {
   public isAdmin: boolean;
   public num: number;
   public age: number;
+  public day: number;
+  public str: string;
 
   constructor() {
     this.squareRootOfTwo = Math.sqrt(2);
@@ -38,5 +40,7 @@ export class AppComponent {
     this.isAdmin = true;
     this.num = 1;
     this.age = 18;
+    this.day = 30;
+    this.str = ""
   }
 }

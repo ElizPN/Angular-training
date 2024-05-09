@@ -53,4 +53,39 @@
     <div>You are usual user</div>
   }
 
+  @if ( day >= 1 && day <= 10) {
+    <div>First decada</div>
+  } @else if (day > 10 && day <= 20) {
+    <div>Second decada</div>
+  } @else {
+    <div>Third decada</div>
+  }
 </div>
+
+<div>
+  @switch (str)  {
+    @case ("a") {
+      <p>aaaaa</p>
+    }
+    @case ("b") {
+      <p>bbbb</p>
+    }
+    @case ("c") {
+      <p>ccccc</p>
+    }
+    @default {
+      <p>error</p>
+    }
+  }
+</div>
+
+<ng-template [ngIf]="isAdmin">
+	<div>
+		text1
+	</div>
+	<div>
+		text2
+	</div>
+</ng-template>
+
+<p>{{ isAdmin }}</p>
